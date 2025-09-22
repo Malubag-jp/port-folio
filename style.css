@@ -670,89 +670,76 @@ footer p{
     font-size: 0.9rem;
 }
 
-/* Additional CSS for accessibility */
 .visually-hidden-focusable {
-            position: absolute;
-            left: -9999px;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-        }
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
         
-        .visually-hidden-focusable:focus {
-            position: static;
-            width: auto;
-            height: auto;
-            padding: 10px;
-            background: #000;
-            color: #fff;
-            text-decoration: none;
-            z-index: 9999;
-        }
+.visually-hidden-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    z-index: 9999;
+}
         
-        .skip-link {
-            background: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 0 0 5px 5px;
-        }
-        
-        .error-message, .status-message {
-            font-size: 0.875rem;
-            margin-top: 0.25rem;
-        }
-        
-        .error-message {
-            color: #dc3545;
-        }
-        
-        .status-message {
-            color: #28a745;
-        }
-        
-        /* High contrast focus indicators */
-        a:focus, button:focus, input:focus, textarea:focus, select:focus {
-            outline: 3px solid #005fcc;
-            outline-offset: 2px;
-        }
-        
-        /* Ensure sufficient color contrast */
-        .navbar-brand:focus {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        /* Screen reader only content */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-        
-        /* Ensure form labels are properly associated */
-        .inputBox input:focus + span,
-        .inputBox textarea:focus + span {
-            color: #005fcc;
-            font-weight: bold;
-        }
-        
-        /* Improve button accessibility */
-        .btn:hover, .btn:focus {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Ensure social media links have proper spacing for touch targets */
-        .social a {
-            min-width: 44px;
-            min-height: 44px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
+.skip-link {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.error-message, .status-message {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.error-message {
+    color: #dc3545;
+}
+
+.status-message {
+    color: #28a745;
+}
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+}
+.navbar-brand:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.inputBox input:focus + span,
+.inputBox textarea:focus + span {
+    color: #005fcc;
+    font-weight: bold;
+}
+.btn:hover, .btn:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.social a {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
