@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Paul Malubag - Portfolio</title>
+    <meta name="description" content="Portfolio of Jhon Paul Malubag, BSIT graduate specializing in web development and IT solutions">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="visually-hidden-focusable skip-link" aria-label="Skip to main content">Skip to main content</a>
+    
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg fixed-top" 
+             style="background-color: #392467;" 
+             data-bs-theme="dark" 
+             id="navbar-example2"
+             role="navigation"
+             aria-label="Main navigation">
+            <div class="container-fluid">
+                <a href="#home" 
+                   class="navbar-brand mb-0 h1"
+                   aria-label="Jhon Paul Malubag - Home">
+                   <strong class="input">Jhon Paul Malubag</strong>
+                </a>
+                <button class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNavAltMarkup" 
+                        aria-controls="navbarNavAltMarkup" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end nav-underline" 
+                     id="navbarNavAltMarkup">
+                    <ul class="navbar-nav" role="menubar">
+                        <li role="none">
+                            <a class="nav-link" href="#home" role="menuitem" aria-current="page">HOME</a>
+                        </li>
+                        <li role="none">
+                            <a class="nav-link" href="#about" role="menuitem">ABOUT</a>
+                        </li>
+                        <li role="none">
+                            <a class="nav-link" href="#skills" role="menuitem">SKILLS</a>
+                        </li>
+                        <li role="none">
+                            <a class="nav-link" href="#projects" role="menuitem">PROJECTS</a>
+                        </li>
+                        <li role="none">
+                            <a class="nav-link" href="#contact" role="menuitem">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main-content" data-bs-spy="scroll" data-bs-target="#navbar-example2" role="main">
+        <!-- Hero Section -->
+        <section class="hero" 
+                 id="home" 
+                 data-aos="fade-in"
+                 role="banner"
+                 aria-labelledby="hero-heading">
+            <div class="main-content">
+                <h4 aria-label="Greeting">Hi, There!</h4>
+                <h1 id="hero-heading">I'm <span class="name">Jhon Paul Malubag</span></h1>
+                <p role="text" aria-label="Professional description">
+                    A BSIT graduate at Pamantasan ng Lungsod ng Pasig and I'm passionate about technology.
+                </p>
+                
+                <nav class="social" 
+                     role="navigation" 
+                     aria-label="Social media links">
+                    <a href="https://www.facebook.com/jhonpaul.malubag/" 
+                       target="_blank"
+                       aria-label="Visit Jhon Paul's Facebook profile (opens in new tab)">
+                        <i class="ri-facebook-fill" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jean_paulyy/" 
+                       target="_blank"
+                       aria-label="Visit Jhon Paul's Instagram profile (opens in new tab)">
+                        <i class="ri-instagram-fill" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@deathjean?_t=8iMXMYXnDhY&_r=1" 
+                       target="_blank"
+                       aria-label="Visit Jhon Paul's TikTok profile (opens in new tab)">
+                        <i class="ri-tiktok-fill" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC_qFZfnavvSe7HMs1o7HrCA" 
+                       target="_blank"
+                       aria-label="Visit Jhon Paul's YouTube channel (opens in new tab)">
+                        <i class="ri-youtube-fill" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jhon-paul-malubag-3a605a368" 
+                       target="_blank"
+                       aria-label="Visit Jhon Paul's LinkedIn profile (opens in new tab)">
+                        <i class="ri-linkedin-fill" aria-hidden="true"></i>
+                    </a>
+                </nav>
+
+                <div class="main-btn">
+                    <a href="#about" 
+                       class="btn"
+                       aria-label="Read more about Jhon Paul">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" 
+                 id="about"
+                 role="region"
+                 aria-labelledby="about-heading">
+            <div class="about-img text-center" data-aos="zoom-in-down">
+                <img src="https://res.cloudinary.com/dw8hbpo7u/image/upload/v1751627471/paul-2_zd71cw.jpg" 
+                     class="img-fluid"
+                     alt="Photo of Jhon Paul Malubag"
+                     role="img">
+            </div>
+
+            <div class="about-text">
+                <h2 id="about-heading" data-aos="zoom-out">About <span>Me</span></h2>
+                <div data-aos="zoom-in-up" role="text" aria-labelledby="about-heading">
+                    <p>
+                        Hello! I'm Jhon Paul Malubag, a fresh graduate with a Bachelor of Science in Information Technology from Pamantasan ng Lungsod ng Pasig. My passion for technology drives me to constantly grow and take on new challenges in the field of software and IT development.
+                    </p>
+                    <p>
+                        I am proficient in a range of programming languages and tools including Java, HTML, CSS, JavaScript, PHP, VB.NET, and Bootstrap. I also have solid experience in database management using MySQL. During my 3-month internship at iStaff Solutions Inc., I honed practical IT skills such as troubleshooting, system setup, CCTV/Wi-Fi installation, and computer maintenance, which helped me develop both technical expertise and real-world problem-solving abilities.
+                    </p>
+                    <p>
+                        I am a fast learner, adaptable, and passionate about programming and continuous improvement. I thrive in team environments and am always eager to explore new technologies and projects that allow me to contribute meaningfully.
+                    </p>
+                    <p>
+                        Beyond the tech world, I enjoy playing mobile games, watching anime, and staying active through volleyball. These hobbies help me maintain a healthy balance between work and life, and they continuously inspire creativity and teamwork in everything I do.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" 
+                 id="skills"
+                 role="region"
+                 aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" data-aos="zoom-in-right">My <span>Skills</span></h2>
+                <div class="skills-content" data-aos="zoom-in-up" role="list" aria-labelledby="skills-heading">
+                    
+                    <div class="skill-category" role="group" aria-labelledby="programming-languages">
+                        <h3 id="programming-languages">Programming Languages</h3>
+                        <div class="skill-items" role="list" aria-labelledby="programming-languages">
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxl-java' aria-hidden="true"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-code' aria-hidden="true"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-code' aria-hidden="true"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxl-javascript' aria-hidden="true"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxl-php' aria-hidden="true"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-code' aria-hidden="true"></i>
+                                <span>VB.NET</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-code-alt' aria-hidden="true"></i>
+                                <span>XML</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-code' aria-hidden="true"></i>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" role="group" aria-labelledby="frameworks-tools">
+                        <h3 id="frameworks-tools">Frameworks & Tools</h3>
+                        <div class="skill-items" role="list" aria-labelledby="frameworks-tools">
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxl-bootstrap' aria-hidden="true"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxs-data' aria-hidden="true"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxl-jquery' aria-hidden="true"></i>
+                                <span>jQuery</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxl-visual-studio' aria-hidden="true"></i>
+                                <span>VS 2015</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxl-visual-studio' aria-hidden="true"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxl-android' aria-hidden="true"></i>
+                                <span>Android Studio</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-coffee' aria-hidden="true"></i>
+                                <span>Eclipse</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-coffee' aria-hidden="true"></i>
+                                <span>BlueJ</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-edit-alt' aria-hidden="true"></i>
+                                <span>Notepad++</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bxl-adobe' aria-hidden="true"></i>
+                                <span>Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" role="group" aria-labelledby="it-skills">
+                        <h3 id="it-skills">IT Skills</h3>
+                        <div class="skill-items" role="list" aria-labelledby="it-skills">
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-wifi' aria-hidden="true"></i>
+                                <span>Wi-Fi Installation</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-cctv' aria-hidden="true"></i>
+                                <span>CCTV Installation</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-wrench' aria-hidden="true"></i>
+                                <span>Computer Maintenance</span>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <i class='bx bx-bug' aria-hidden="true"></i>
+                                <span>Troubleshooting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" 
+                 id="projects"
+                 role="region"
+                 aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" data-aos="zoom-in">My <span>Projects</span></h2>
+                <div class="projects-content" data-aos="zoom-in-up" role="list" aria-labelledby="projects-heading">
+                    
+                    <div class="project-category" role="group" aria-labelledby="java-projects">
+                        <h3 id="java-projects">Java Projects</h3>
+                        <div class="project-items" role="list" aria-labelledby="java-projects">
+                            
+                            <article class="project-item" role="listitem">
+                                <h4>Array Operations</h4>
+                                <p>Program demonstrating array operations like insertion, searching, and deletion.</p>
+                                <a href="https://onlinegdb.com/ctY-zGlLw" 
+                                   target="_blank" 
+                                   class="btn"
+                                   aria-label="View Array Operations project on OnlineGDB (opens in new tab)">
+                                   View Project
+                                </a>
+                            </article>
+                            
+                            <article class="project-item" role="listitem">
+                                <h4>Sorting Algorithms</h4>
+                                <p>Implementation of bubble sort, selection sort, and insertion sort algorithms.</p>
+                                <a href="https://onlinegdb.com/47XRN3c_4" 
+                                   target="_blank" 
+                                   class="btn"
+                                   aria-label="View Sorting Algorithms project on OnlineGDB (opens in new tab)">
+                                   View Project
+                                </a>
+                            </article>
+                            
+                            <article class="project-item" role="listitem">
+                                <h4>Stack Conversion</h4>
+                                <p>Converts between infix, postfix, and prefix notation using stack operations.</p>
+                                <a href="https://onlinegdb.com/zZIou_fsz" 
+                                   target="_blank" 
+                                   class="btn"
+                                   aria-label="View Stack Conversion project on OnlineGDB (opens in new tab)">
+                                   View Project
+                                </a>
+                            </article>
+                            
+                            <article class="project-item" role="listitem">
+                                <h4>BST Tree Operations</h4>
+                                <p>Binary Search Tree implementation with traversal methods (inorder, preorder, postorder).</p>
+                                <a href="https://onlinegdb.com/3UzN9krh0" 
+                                   target="_blank" 
+                                   class="btn"
+                                   aria-label="View BST Tree Operations project on OnlineGDB (opens in new tab)">
+                                   View Project
+                                </a>
+                            </article>
+                            
+                            <article class="project-item" role="listitem">
+                                <h4>Ordering System</h4>
+                                <p>A Java-based ordering system with menu management and order processing capabilities.</p>
+                                <a href="https://onlinegdb.com/fKEv2T9pa" 
+                                   target="_blank" 
+                                   class="btn"
+                                   aria-label="View Ordering System project on OnlineGDB (opens in new tab)">
+                                   View Project
+                                </a>
+                            </article>
+                            
+                            <article class="project-item" role="listitem">
+                                <h4>ATM Machine Simulation</h4>
+                                <p>Simulates ATM operations including balance checking, deposits, and withdrawals.</p>
+                                <a href="https://onlinegdb.com/GLDODbeLS" 
+                                   target="_blank" 
+                                   class="btn"
+                                   aria-label="View ATM Machine Simulation project on OnlineGDB (opens in new tab)">
+                                   View Project
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <div class="project-category" role="group" aria-labelledby="other-projects">
+                        <h3 id="other-projects">Other Projects</h3>
+                        <div class="project-items" role="list" aria-labelledby="other-projects">
+                            
+                            <article class="project-item" role="listitem">
+                                <h4>Hanging Man (C++)</h4>
+                                <p>A C++ implementation of the classic Hangman word guessing game.</p>
+                                <a href="https://onlinegdb.com/7L8eaIcNJ" 
+                                   target="_blank" 
+                                   class="btn"
+                                   aria-label="View Hanging Man C++ project on OnlineGDB (opens in new tab)">
+                                   View Project
+                                </a>
+                            </article>
+                            
+                            <article class="project-item" role="listitem">
+                                <h4>Thesis</h4>
+                                <p>Enhancing PLP Student Learning: A User-Centric System for Quantitative Methods.</p>
+                                <a href="https://learnxpert-99b978cf97a5.herokuapp.com/" 
+                                   target="_blank" 
+                                   class="btn"
+                                   aria-label="View LearnXpert thesis project on Heroku (opens in new tab)">
+                                   View Project
+                                </a>
+                            </article>
+                            
+                            <article class="project-item" role="listitem">
+                                <h4>OJT Time Log System</h4>
+                                <p>System to track OJT time logs including breaks and shift reports.</p>
+                                <a href="http://malubag.byethost16.com/dashboard.php" 
+                                   target="_blank" 
+                                   class="btn"
+                                   aria-label="View OJT Time Log System project (opens in new tab)">
+                                   View Project
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" 
+                 id="contact"
+                 role="region"
+                 aria-labelledby="contact-heading">
+            <div class="contentus" data-aos="zoom-in-down">
+                <h2 id="contact-heading"><span>Contact</span> Me</h2>
+                <p>I value your feedback and inquiries. Reach me out through the contact form below.</p>
+            </div>
+            
+            <div class="contain">
+                <div class="contactInfo" 
+                     data-aos="zoom-out-right"
+                     role="complementary"
+                     aria-label="Contact information">
+                    
+                    <div class="box" role="group" aria-labelledby="address-label">
+                        <div class="icon">
+                            <a href="https://maps.app.goo.gl/jehc1sVP68KeTJCA8" 
+                               target="_blank"
+                               aria-label="View address location on Google Maps (opens in new tab)">
+                                <i class="ri-map-pin-fill" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h3 id="address-label">Address</h3>
+                            <p>Brgy. San Miguel <br> Pasig City</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box" role="group" aria-labelledby="phone-label">
+                        <div class="icon">
+                            <i class="ri-phone-fill" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3 id="phone-label">Phone</h3>
+                            <p>
+                                <a href="tel:+639062798033" aria-label="Call +63-906-279-8033">+63-906-279-8033</a> <br>
+                                <a href="tel:+639936219583" aria-label="Call +63-993-621-9583">+63-993-621-9583</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="box" role="group" aria-labelledby="email-label">
+                        <div class="icon">
+                            <a href="mailto:malubagjp@gmail.com"
+                               aria-label="Send email to malubagjp@gmail.com">
+                                <i class="ri-mail-fill" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h3 id="email-label">Email</h3>
+                            <p>
+                                <a href="mailto:malubagjp@gmail.com">malubagjp@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contactForm" 
+                     data-aos="zoom-in-up"
+                     role="form"
+                     aria-labelledby="contact-form-heading">
+                    <form action="https://formspree.io/f/mblybnjg" method="POST" novalidate>
+                        <h2 id="contact-form-heading">Send Message</h2>
+                        
+                        <div class="inputBox">
+                            <label for="name" class="visually-hidden">Full Name</label>
+                            <input type="text" 
+                                   id="name" 
+                                   name="Name" 
+                                   required
+                                   aria-required="true"
+                                   aria-describedby="name-error">
+                            <span>Full Name</span>
+                            <div id="name-error" aria-live="polite" class="error-message"></div>
+                        </div>
+                        
+                        <div class="inputBox">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="Email" 
+                                   required
+                                   aria-required="true"
+                                   aria-describedby="email-error">
+                            <span>Email</span>
+                            <div id="email-error" aria-live="polite" class="error-message"></div>
+                        </div>
+                        
+                        <div class="inputBox">
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea id="message" 
+                                      name="Message" 
+                                      required
+                                      aria-required="true"
+                                      aria-describedby="message-error"
+                                      rows="5"></textarea>
+                            <span>Type your Message...</span>
+                            <div id="message-error" aria-live="polite" class="error-message"></div>
+                        </div>
+                        
+                        <div class="inputBox">
+                            <input type="submit" 
+                                   id="submit" 
+                                   value="Send"
+                                   aria-describedby="submit-status">
+                            <div id="submit-status" aria-live="polite" class="status-message"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="footer" 
+            role="contentinfo"
+            aria-label="Site footer">
+        <div class="foot">
+            <nav class="social" 
+                 role="navigation" 
+                 aria-label="Footer social media links">
+                <ul class="social">
+                    <li>
+                        <a href="https://www.facebook.com/jhonpaul.malubag/" 
+                           target="_blank"
+                           aria-label="Visit Jhon Paul's Facebook profile (opens in new tab)">
+                            <i class="ri-facebook-fill" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/jean_paulyy/" 
+                           target="_blank"
+                           aria-label="Visit Jhon Paul's Instagram profile (opens in new tab)">
+                            <i class="ri-instagram-fill" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@deathjean?_t=8iMXMYXnDhY&_r=1" 
+                           target="_blank"
+                           aria-label="Visit Jhon Paul's TikTok profile (opens in new tab)">
+                            <i class="ri-tiktok-fill" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC_qFZfnavvSe7HMs1o7HrCA" 
+                           target="_blank"
+                           aria-label="Visit Jhon Paul's YouTube channel (opens in new tab)">
+                            <i class="ri-youtube-fill" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jhon-paul-malubag-3a605a368" 
+                           target="_blank"
+                           aria-label="Visit Jhon Paul's LinkedIn profile (opens in new tab)">
+                            <i class="ri-linkedin-fill" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav role="navigation" aria-label="Footer navigation">
+                <ul class="menss">
+                    <li><a class="nav-link" href="#home">HOME</a></li>
+                    <li><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li><a class="nav-link" href="#skills">SKILLS</a></li>
+                    <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+                    <li><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            
+            <p role="contentinfo">
+                ©2023 By Jhon Paul Malubag | All Rights Reserved<br>
+                Web Development
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>
